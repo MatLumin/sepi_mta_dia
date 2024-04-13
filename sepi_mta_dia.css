@@ -1,0 +1,204 @@
+
+:root
+	{
+	--golden_color_code : #DAA520; 
+	}
+
+@keyframes login_animation
+	{
+	from 
+		{
+		filter: blur(5px);
+		transform:translateY(+100vh);
+		}
+
+	to 
+		{
+		transform: scale(1) translateY(0px);
+		}
+	}
+
+.login_animation_class
+	{
+	animation-name: login_animation;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 1;
+	}
+
+
+@keyframes moving_background 
+	{
+	from
+		{
+		background-position-x:0px;
+		}
+	to 
+		{
+		background-position-x:500px;	
+		}
+	}
+
+
+.moving_background_class 
+	{
+	animation-name: moving_background;		
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+	}
+
+
+
+
+/*
+animations area bove
+*/
+
+.sepi_mta_dia_font
+	{
+	font-family: monospace;
+	}
+
+
+.sepi_mta_dia_shared_style
+	{
+	}
+
+
+.basic_sepi_mta_dia_button_aniamtion 
+	{
+	transition: 0.1s;		
+	}
+
+.basic_sepi_mta_dia_button_aniamtion:hover
+	{
+	transform: translateY(-0.5vh);
+	transition: 0.1s;		
+	}
+
+.basic_sepi_mta_dia_button_aniamtion:active 
+	{
+	transition: 0.1s;		
+	transform: translateY(+1vh);
+	}
+
+
+.dialog_closing_button 
+	{
+	background-color: var(--golden_color_code);
+	color:black;
+	border-style: none;
+	height: fit-content;
+	width: fit-content;
+	font-family: monospace;
+	border-radius: 999px;
+	margin-bottom: 3vh;
+	}
+
+
+
+.sepi_mta_dia_button_golden
+	{
+	font-size: x-large;
+	background-color: var(--golden_color_code);
+	color: black;
+	border-radius: 1vh;
+	border-style: none;
+	padding: 1vh;
+
+
+	}
+
+.sepi_mta_dia_button_golden:hover
+	{
+	box-shadow: 0px 0px 5px var(--golden_color_code);
+	text-shadow:  0px 0px 10px var(--golden_color_code);	
+	border-color: var(--golden_color_code);	
+	border-style: solid;
+	border-width: 1px;
+	background-color: transparent;
+	color: var(--golden_color_code);
+	
+
+	transition: 0.1s;
+	}	
+
+
+.sepi_mta_dia_button_golden:active
+	{
+	transform: translateY(3px);
+	transition: 0.1s;
+	}
+
+
+.sepi_mta_dia_action_bar_button
+	{
+	}
+
+
+.sepi_mta_dia_action_bar_button
+	{
+	}
+
+.sepi_mta_dia_action_bar_button
+	{
+	}
+
+.sepi_mta_dia_holder_overlay
+	{
+
+
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	background-color: transparent;
+	z-index: 4;
+	background-color: transparent;
+	backdrop-filter: blur(5px);
+	}
+
+
+.sepi_mta_dia 
+	{
+	width: 30vw;
+	height: fit-content;
+
+	background-image: url("sepi_dia_mta_background.jpg");
+	background-size:20 vh;
+
+
+	border-color: transparent;
+	border-style: none;
+	border-radius: 1vh;
+	margin-top: 8vh;
+
+	padding: 2%;
+
+	}	
+
+
+
+.sepi_mts_dia_input
+	{
+	display: block;
+	margin: 2vh;
+	background-color: black;
+	border-color: var(--golden_color_code);
+	color:white;
+	border-style: solid;
+	border-radius: 3px;
+	width: 80%;
+	padding: 1vh;
+
+	font-size: x-large;
+	}
+
+.sepi_mts_dia_label
+	{
+	display: block;
+	color: white;
+	font-size: x-large;
+	}
